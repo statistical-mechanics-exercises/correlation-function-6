@@ -1,4 +1,5 @@
 import unittest
+import numpy as np
 from main import *
 
 class UnitTests(unittest.TestCase) :
