@@ -15,7 +15,7 @@ class UnitTests(unittest.TestCase) :
       fighand=plt.gca()
       figdat = fighand.get_lines()[0].get_xydata()
       this_x, this_y = zip(*figdat)
-      average = sum(microstate1) / len(microstate1) + sum(microstate2) / len(microstate2) + sum(microstate3) / len(microstate3)
+      average = (1/3)*(sum(microstate1) / len(microstate1) + sum(microstate2) / len(microstate2) + sum(microstate3) / len(microstate3))
       nr = int( len(microstate1)/2+1 )
       for i in range(nr) : 
           var, cor = 0, 0
